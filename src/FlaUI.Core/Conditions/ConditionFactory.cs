@@ -20,6 +20,7 @@ namespace FlaUI.Core.Conditions
         /// <summary>
         /// Creates a condition to search by an automation id.
         /// </summary>
+        /// 
         public PropertyCondition ByAutomationId(string automationId, PropertyConditionFlags conditionFlags = PropertyConditionFlags.None)
         {
             return new PropertyCondition(_propertyLibrary.Element.AutomationId, automationId, conditionFlags);
@@ -101,7 +102,7 @@ namespace FlaUI.Core.Conditions
         /// <summary>
         /// Creates a condition to search by a value.
         /// </summary>
-        public PropertyCondition ByValue(string value, , PropertyConditionFlags conditionFlags = PropertyConditionFlags.None)
+        public PropertyCondition ByValue(string value, PropertyConditionFlags conditionFlags = PropertyConditionFlags.None)
         {
             return new PropertyCondition(_propertyLibrary.Value.Value, value, conditionFlags);
         }
